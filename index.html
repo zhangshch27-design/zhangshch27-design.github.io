@@ -1,26 +1,168 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Welcome to My GitHub Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zhangshch's Homepage</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      padding: 40px;
-      text-align: center;
-    }
-    h1 {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      background: #fff;
       color: #333;
     }
-    p {
-      font-size: 18px;
+    header {
+      background: #f9f9f9;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 22px;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #444;
+      font-size: 15px;
+    }
+    nav a:hover {
+      color: #007acc;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .left {
+      flex: 1;
+      min-width: 280px;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .left img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .left h2 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .left p {
+      margin: 5px 0;
+    }
+
+    .icons a {
+      margin: 0 8px;
+      font-size: 22px;
+      text-decoration: none;
+    }
+
+    .right {
+      flex: 2;
+      min-width: 300px;
+      padding: 20px;
+    }
+
+    .right h3 {
+      margin-top: 0;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .edu-entry {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      padding: 20px;
+      color: #999;
     }
   </style>
 </head>
 <body>
-  <h1>Hello, I'm Zhang!</h1>
-  <p>This is my personal website hosted on GitHub Pages.</p>
-  <p>Stay tuned for more updates!</p>
+
+<header>
+  <h1>Zhangshch's Homepage</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Publications</a>
+    <a href="#">Projects</a>
+    <a href="#">CV</a>
+    <a href="#">中文</a>
+  </nav>
+</header>
+
+<div class="container">
+  <div class="left">
+    <img src="https://i.imgur.com/2yaf2wb.jpg" alt="Profile Photo" />
+    <h2>Zhang Shch</h2>
+    <p>Some University</p>
+    <div class="icons">
+      <a href="mailto:zhang@example.com">📧</a>
+      <a href="https://scholar.google.com">🔍</a>
+      <a href="https://orcid.org">🆔</a>
+      <a href="#">📄</a>
+    </div>
+  </div>
+
+  <div class="right">
+    <div class="section">
+      <h3>Hello, I’m Zhang!</h3>
+      <p>I am a researcher focused on <strong>Digital Transformation</strong> and <strong>Financial Risk Management</strong>. My research interests include financial technology, sustainable finance, and digital governance.</p>
+      <p>I have published in journals such as <em>Journal of Financial Studies</em>, <em>Technological Forecasting & Social Change</em>, and others.</p>
+    </div>
+
+    <div class="section">
+      <h3>Interests</h3>
+      <ul>
+        <li>Digital Finance</li>
+        <li>Risk Management</li>
+        <li>Green Finance</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Education</h3>
+      <div class="edu-entry">
+        <strong>Ph.D. in Finance</strong>, Some University <br>
+        Advisor: Professor A
+      </div>
+      <div class="edu-entry">
+        <strong>M.A. in Finance</strong>, Another University <br>
+        Advisor: Professor B
+      </div>
+      <div class="edu-entry">
+        <strong>B.A. in Economics</strong>, Third University
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 Zhangshch · Powered by GitHub Pages
+</footer>
+
 </body>
 </html>
