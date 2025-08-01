@@ -96,11 +96,11 @@
        }
 
    .flex-row .section {
-       flex: 2;
+       flex: 2.4;
         min-width: 240px;
        }
   .flex-row .interests {
-    flex: 0.5; 
+    flex: 0.4; 
     min-width: 240px;
     }
     .section {
@@ -157,6 +157,52 @@
 .skill-item p {
   margin: 0;
   font-size: 14px;
+}
+.working-paper-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  padding: 60px 40px;
+  flex-wrap: wrap;
+}
+
+.working-left {
+  flex: 0 0 200px;
+  font-size: 28px;
+  font-family: Georgia, serif;
+  text-align: center;
+  line-height: 1.2;
+  color: #333;
+}
+
+.working-right {
+  flex: 1;
+  max-width: 700px;
+}
+
+.paper-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.paper-card h3 {
+  margin-top: 0;
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-family: Georgia, serif;
+  color: #333;
+}
+
+.paper-card ul {
+  padding-left: 20px;
+}
+
+.paper-card ul li {
+  margin-bottom: 8px;
 }
   </style>
 </head>
@@ -247,7 +293,27 @@
     </div>
   </div>
 </div>
+<div class="working-paper-container">
+  <div class="working-left">
+    <h2>Working<br>Papers</h2>
+  </div>
 
+
+  
+  <div class="working-right">
+    <div class="paper-card">
+      <h3>Digital Transformation</h3>
+      <ul>
+        <li>Why does digital transformation fail? A perspective on workforce and compensation incentives</li>
+        <li>The dark side of financial digitalization: Firms' risk propensity and its consequences</li>
+        <li>Bank digitalization, credit allocation, and consumption inequality</li>
+        <li>Live streaming E-Commerce, irrational consumption, and platform installment payments</li>
+        <li>How does digital transformation work? A perspective on information management and resource allocation</li>
+        <li>Spatial interaction and spillover effects between digital finance and financial risks</li>
+      </ul>
+    </div>
+  </div>
+</div>
   
 <footer>
  &copy; 2025 Zhangshch · Powered by GitHub Pages
